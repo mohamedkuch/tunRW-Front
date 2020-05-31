@@ -127,7 +127,10 @@
   font-weight: 700;
   font-size: 30px;
 }
+.coverHeadingTitlePrimary span {
+  font-size: 35px;
 
+}
 .coverSubHeadingTitle {
   text-transform: uppercase;
   font-weight: 100;
@@ -191,7 +194,8 @@
   cursor: pointer;
   display: flex;
   transition: 0.8s all;
-  position: absolute;
+  position: relative;
+  width: fit-content;
   top: 8px;
 }
 .socialButtonWrapper:hover {
@@ -209,4 +213,11 @@
 .aboutTextValue h5{
   position: absolute;  
   bottom: 0;
+}
+
+/* ######## TEAM ######### */
+
+.teamContainer{
+  display: block;
+  height: 300px;
 }
