@@ -1,0 +1,56 @@
+/*#########  NAVBAR Style ########*/
+.logoBG {
+  mask-image: url('../assets/images/logo.png');
+  width: 140px;
+  height: 40px;
+  mask-size: 140px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #eaeaea;
+}
+.navbar {
+  padding: 1rem !important;
+  background-color: transparent !important;
+  border-bottom: 1px solid #5e5e5e;
+}
+.nav-item {
+  margin-left: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+.nav-link {
+  text-transform: uppercase;
+  color: #eaeaea !important;
+  border-radius: 2px;
+  transition: 0.5s all;
+}
+.active>.nav-link{
+  background: rgb(231, 20, 38);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+-moz-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+  // border-bottom: 1px solid #E71424 !important;
+}
+.nav-link:hover{
+  background: rgb(231, 20, 38);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+-moz-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+  // border-bottom: 1px solid #E71424 !important;
+}
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .navbar-nav {
+    background: #f9f9f9;
+    margin-top: 10px;
+  }
+}
+
+/*#########  Cover Style ########*/
+.coverContainer{
+  background-image: url("../assets/images/bg-main.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+}
