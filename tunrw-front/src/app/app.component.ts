@@ -12,4 +12,7 @@ export class AppComponent {
   onMenuClick(){
     this.menuExpandFlag = !this.menuExpandFlag;
   }
+  onFBClick(){
+    window.open("https://www.facebook.com/TunRW.ev/", "_blank");
+  }
 }

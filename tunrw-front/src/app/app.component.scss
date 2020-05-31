@@ -1,3 +1,21 @@
+/* ###### General style ###########*/
+.title , .smallTitle , .medTitle , .bigTitle, .descr, .aboutTitleWrapper{
+  font-family: 'Niramit', sans-serif;
+}
+.smallTitle{
+  font-size: 16px !important;
+
+}
+.medTitle {
+  font-size: 20px !important;
+}
+.descr{
+  font-weight: 200;
+  text-align: justify;
+}
+
+
+
 /*#########  NAVBAR Style ########*/
 .logoBG {
   mask-image: url('../assets/images/logo.png');
@@ -8,15 +26,18 @@
   mask-repeat: no-repeat;
   background-color: #eaeaea;
 }
-.navbar{
+
+.navbar {
   background-color: transparent !important;
   padding: 1rem !important;
 
 }
-.navbarBorder{
+
+.navbarBorder {
   border-bottom: 1px solid #504e78a2;
 
 }
+
 .nav-item {
   margin-left: 1rem;
   text-align: center;
@@ -27,7 +48,7 @@
   text-transform: uppercase;
   color: #eaeaea !important;
   border-radius: 2px;
-  transition: 0.5s all;
+  transition: 0.8s all;
 }
 
 .active>.nav-link {
@@ -58,11 +79,6 @@
     width: min-content;
   }
 
-  .navbar {
-    // width: min-content;
-
-  }
-
   .nav-link {
     padding: 10px 20px;
     margin-top: 5px;
@@ -76,14 +92,121 @@
   position: absolute;
   min-height: 100vh;
   min-width: 100vw;
-  background-image: linear-gradient(#0c0b1d, rgba(231, 20, 38, 0.432));
+  background-image: linear-gradient(rgb(26, 26, 26), rgba(231, 20, 38, 0.479));
 
 }
 
 .coverContainer {
-  background-image: url("../assets/images/bg-main.jpg");
+  background-image:    url("../assets/images/bg-main.jpg") ;
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
   position: absolute;
+}
+
+
+/* ########### Cover Heading style ######## */
+
+.coverHeadingContainer {
+  color: white;
+  text-align: center;
+  height: calc(100vh - 200px);
+}
+
+.coverHeadingTitle {
+  font-family: 'Noto Serif', serif;
+  color: #ffffff30;
+  font-size: 30px;
+}
+
+.coverHeadingTitlePrimary {
+  font-family: 'Noto Serif', serif;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.coverSubHeadingTitle {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverSubHeadingSpacer {
+  height: 1px;
+  width: 40px;
+  background-color: rgb(231, 20, 38);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.scrollButton {
+  margin-bottom: 1rem;
+  background: url('../assets/images/scrollIcon.png');
+  background-size: 20px;
+  width: 20px;
+  height: 33px;
+}
+
+
+/* ######## About Style #########*/
+.aboutWrapper{
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 18px 0 rgba(0,0,0,.32);
+}
+
+.aboutWrapper{
+  color: #232323;
+}
+.aboutTitle{
+  font-size: 14px;
+}
+.socialIcon{
+  mask-image: url(../assets/images/fb.png);
+  mask-repeat: no-repeat;
+  mask-size: 20px;
+  width: 20px;
+  height: 22px;
+  background-color: white;
+  margin-right: 18px;
+  margin-top: 16px;
+  margin-left: 12px;
+
+}
+.socialButtonWrapper{
+  line-height: 50px;
+  background: rgb(67, 67, 67);
+  color: white;
+  border-radius: 4px;
+  font-weight: 200 !important;
+  cursor: pointer;
+  display: flex;
+  transition: 0.8s all;
+  position: absolute;
+  top: 8px;
+}
+.socialButtonWrapper:hover {
+  background: #4267B2;
+}
+.aboutTitleWrapper{
+  display: flex;
+}
+
+.aboutValue {
+  font-size: 40px !important;
+  font-weight: 200 !important;
+  min-width: 60px;
+}
+.aboutTextValue h5{
+  position: absolute;  
+  bottom: 0;
 }

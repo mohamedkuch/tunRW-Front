@@ -29,12 +29,14 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/OwlCarousel/dist/assets/owl.carousel.min.css"
+
             ],
             "scripts": [
-
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/OwlCarousel/dist/owl.carousel.min.js"
             ]
           },
           "configurations": {
