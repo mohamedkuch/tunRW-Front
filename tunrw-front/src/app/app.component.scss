@@ -8,46 +8,79 @@
   mask-repeat: no-repeat;
   background-color: #eaeaea;
 }
-.navbar {
-  padding: 1rem !important;
+.navbar{
   background-color: transparent !important;
-  border-bottom: 1px solid #5e5e5e;
+  padding: 1rem !important;
+
+}
+.navbarBorder{
+  border-bottom: 1px solid #504e78a2;
+
 }
 .nav-item {
   margin-left: 1rem;
   text-align: center;
   font-size: 12px;
 }
+
 .nav-link {
   text-transform: uppercase;
   color: #eaeaea !important;
   border-radius: 2px;
   transition: 0.5s all;
 }
-.active>.nav-link{
+
+.active>.nav-link {
   background: rgb(231, 20, 38);
-  -webkit-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
--moz-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   // border-bottom: 1px solid #E71424 !important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   background: rgb(231, 20, 38);
-  -webkit-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
--moz-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
-box-shadow: -10px 10px 34px 0px rgba(0,0,0,0.28);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   // border-bottom: 1px solid #E71424 !important;
 }
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+
+.menuIcon {
+  color: #eaeaea !important;
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
   .navbar-nav {
-    background: #f9f9f9;
     margin-top: 10px;
+    width: min-content;
   }
+
+  .navbar {
+    // width: min-content;
+
+  }
+
+  .nav-link {
+    padding: 10px 20px;
+    margin-top: 5px;
+
+  }
+
 }
 
 /*#########  Cover Style ########*/
-.coverContainer{
+.coverFilter {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(#0c0b1d, rgba(231, 20, 38, 0.432));
+
+}
+
+.coverContainer {
   background-image: url("../assets/images/bg-main.jpg");
   background-size: cover;
   min-height: 100vh;
