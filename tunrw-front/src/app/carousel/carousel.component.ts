@@ -1,19 +1,40 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { trigger, transition, style, animate, useAnimation } from '@angular/animations';
-
 import {
-  scaleIn,
-  scaleOut,
+  fadeIn,
+  fadeOut,
 } from "./carousel.animations";
 @Component({
   selector: 'carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
   animations: [
-    trigger("slideAnimation", [
-      /* scale */
-      transition("void => *", [useAnimation(scaleIn, {params: { time: '500ms' }} )]),
-      transition("* => void", [useAnimation(scaleOut, {params: { time: '500ms' }})]),
+    trigger('carouselAnimationFirst', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('300ms', style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate('300ms', style({ opacity: 0 }))
+      ])
+    ]),
+    trigger('carouselAnimationSnd', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('400ms', style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate('400ms', style({ opacity: 0 }))
+      ])
+    ]),
+    trigger('carouselAnimationThrd', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate('500ms', style({ opacity: 1 }))
+      ]),
+      transition('* => void', [
+        animate('500ms', style({ opacity: 0 }))
+      ])
     ])
   ]
 })

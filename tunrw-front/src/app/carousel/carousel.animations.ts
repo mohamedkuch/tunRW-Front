@@ -22,3 +22,22 @@ import {
       style({ opacity: 0, transform: "scale(0.5)" })
     )
   ]);
+
+
+  // =========================
+  // fade
+  // =========================
+
+  export const fadeIn = animation([
+    animate(
+      "{{time}}",
+      style({ opacity: 1 })
+    )
+  ]);
+
+  export const fadeOut = animation([
+    animate(
+      "{{time}}",
+      style({ opacity: 0 })
+    )
+  ]);
