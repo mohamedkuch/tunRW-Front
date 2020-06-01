@@ -1,9 +1,39 @@
 <!-- carousel -->
-<div class="carousel">
+<div class="carousel" (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)">
   <ng-container *ngFor="let slide of slides; let i = index">
-      <img *ngIf="i === currentSlide" [src]="slide.src" class="slide" @slideAnimation />
-      <img *ngIf="i === currentSlide" [src]="slide.src" class="slide sdSlide" @slideAnimation />
-      <img *ngIf="i === currentSlide" [src]="slide.src" class="slide thdSlide" @slideAnimation />
+
+    <div class="slide" @slideAnimation (swipeleft)="onSwipeLeft($event)" *ngIf="i === currentSlide"
+      (swiperight)="onSwipeRight($event)">
+      <img [src]="slide.src" @slideAnimation (swipeleft)="onSwipeLeft($event)" *ngIf="i === currentSlide"
+        (swiperight)="onSwipeRight($event)" />
+      <div class="slideTitle">
+        <h5 class="medTitle">Lorem Ipsum</h5>
+      </div>
+      <div class="slideTitle">
+        <p class="descr">Chef Maister</p>
+      </div>
+
+    </div>
+    <div *ngIf="i === sndSlide" class="slide sdSlide" @slideAnimation (swipeleft)="onSwipeLeft($event)"
+      (swiperight)="onSwipeRight($event)">
+      <img [src]="slide.src" @slideAnimation (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)" />
+      <div class="slideTitle">
+        <h5 class="medTitle">Lorem Ipsum</h5>
+      </div>
+      <div class="slideTitle">
+        <p class="descr">Chef Maister</p>
+      </div>
+    </div>
+    <div *ngIf="i === thdSlide" class="slide thdSlide" @slideAnimation (swipeleft)="onSwipeLeft($event)"
+      (swiperight)="onSwipeRight($event)">
+      <img [src]="slide.src" @slideAnimation (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)" />
+      <div class="slideTitle">
+        <h5 class="medTitle">Lorem Ipsum</h5>
+      </div>
+      <div class="slideTitle">
+        <p class="descr">Chef Maister</p>
+      </div>
+    </div>
 
 
   </ng-container>
