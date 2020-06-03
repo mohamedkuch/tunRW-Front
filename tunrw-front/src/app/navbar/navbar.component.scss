@@ -1,0 +1,166 @@
+/*#########  NAVBAR Style ########*/
+.logoBG {
+  mask-image: url('../../assets/images/logo.png');
+  width: 140px;
+  height: 40px;
+  mask-size: 140px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #eaeaea;
+}
+
+.navbar {
+  background-color: transparent !important;
+  padding: 1rem !important;
+
+}
+
+.navbarBorder {
+  border-bottom: 1px solid #504e78a2;
+
+}
+
+.nav-item {
+  margin-left: 1rem;
+  text-align: center;
+  font-size: 12px;
+
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #eaeaea !important;
+  border-radius: 2px;
+  transition: 0.8s all;
+
+}
+
+.active>.nav-link {
+  background: rgb(231, 20, 38);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  // border-bottom: 1px solid #E71424 !important;
+}
+
+.nav-link:hover {
+  background: rgb(231, 20, 38);
+  -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
+  // border-bottom: 1px solid #E71424 !important;
+}
+
+.menuIcon {
+  color: #eaeaea !important;
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .navbar-nav {
+    margin-top: 10px;
+    width: min-content;
+  }
+
+  .nav-link {
+    padding: 10px 20px;
+    margin-top: 5px;
+
+  }
+
+}
+
+/*#########  Cover Style ########*/
+.coverFilter {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(rgb(26, 26, 26), rgba(231, 20, 38, 0.479));
+
+}
+
+.coverFilter2 {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(#07020bcd, #c3143171);
+
+}
+
+.coverAbstract {
+
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("../../assets/images/BG_Cover.jpg");
+  background-size: auto 180vh;
+  mix-blend-mode: color;
+  background-repeat: no-repeat;
+}
+
+.coverContainer {
+  background-image: url("../../assets/images/bg-main.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+}
+
+
+/* ########### Cover Heading style ######## */
+
+.coverHeadingContainer {
+  color: white;
+  text-align: center;
+  height: calc(100vh - 200px);
+}
+
+.coverHeadingTitle {
+  font-family: 'Noto Serif', serif !important;
+  color: #ffffff30;
+  font-size: 30px;
+}
+
+.coverHeadingTitlePrimary {
+  font-family: 'Noto Serif', serif !important;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.coverHeadingTitlePrimary span {
+  font-size: 35px;
+
+}
+
+.coverSubHeadingTitle {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverSubHeadingSpacer {
+  height: 1px;
+  width: 40px;
+  background-color: rgb(231, 20, 38);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.scrollButton {
+  margin-bottom: 1rem;
+  background: url('../../assets/images/scrollIcon.png');
+  background-size: 20px;
+  width: 20px;
+  height: 33px;
+}
