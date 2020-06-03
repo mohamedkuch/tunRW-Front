@@ -1,37 +1,38 @@
 <!-- carousel -->
-<div class="carousel" (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)">
+<div class="carousel" (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)" (swipedown)="onSwipeDown($event)">
   <ng-container *ngFor="let slide of slides; let i = index">
 
-    <div class="slide"  @carouselAnimationFirst   (swipeleft)="onSwipeLeft($event)" *ngIf="i === currentSlide"
+    <div class="slide"  @carouselAnimationFirst   (swipeleft)="onSwipeLeft($event)"  (swipedown)="onSwipeDown($event)" *ngIf="i === currentSlide"
       (swiperight)="onSwipeRight($event)">
       <img [src]="slide.src"  (swipeleft)="onSwipeLeft($event)" *ngIf="i === currentSlide"
         (swiperight)="onSwipeRight($event)" />
       <div class="slideTitle">
-        <h5 class="medTitle">Lorem Ipsum</h5>
+        <h5 class="medTitle">{{slide.name}}</h5>
       </div>
       <div class="slideTitle">
-        <p class="descr">Chef Maister</p>
+        <p class="descr">{{slide.position}}</p>
       </div>
 
     </div>
-    <div *ngIf="i === sndSlide"  @carouselAnimationSnd class="slide sdSlide" (swipeleft)="onSwipeLeft($event)"
+    <div *ngIf="i === sndSlide"  @carouselAnimationSnd class="slide sdSlide" (swipeleft)="onSwipeLeft($event)"  (swipedown)="onSwipeDown($event)"
       (swiperight)="onSwipeRight($event)">
       <img [src]="slide.src" (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)" />
       <div class="slideTitle">
-        <h5 class="medTitle">Lorem Ipsum</h5>
+        <h5 class="medTitle">{{slide.name}}</h5>
       </div>
       <div class="slideTitle">
-        <p class="descr">Chef Maister</p>
+        <p class="descr">{{slide.position}}</p>
       </div>
     </div>
-    <div *ngIf="i === thdSlide"  @carouselAnimationThrd class="slide thdSlide"   (swipeleft)="onSwipeLeft($event)"
+    <div *ngIf="i === thdSlide"  @carouselAnimationThrd class="slide thdSlide"   (swipeleft)="onSwipeLeft($event)"  (swipedown)="onSwipeDown($event)"
       (swiperight)="onSwipeRight($event)">
       <img [src]="slide.src"  (swipeleft)="onSwipeLeft($event)" (swiperight)="onSwipeRight($event)" />
       <div class="slideTitle">
-        <h5 class="medTitle">Lorem Ipsum</h5>
+        <h5 class="medTitle">{{slide.name}}</h5>
       </div>
       <div class="slideTitle">
-        <p class="descr">Chef Maister</p>
+        <p class="descr">{{slide.position}}</p>
+
       </div>
     </div>
 

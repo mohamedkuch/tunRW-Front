@@ -92,7 +92,10 @@ export class CarouselComponent implements OnInit {
     console.log("next clicked, new current slide is: ", this.currentSlide);
   }
   onSwipeLeft(event) {
+    console.log("##", event);
     this.onNextClick();
+  }
+  onSwipeDown(event) {
   }
   onSwipeRight(event) {
     this.onPreviousClick();

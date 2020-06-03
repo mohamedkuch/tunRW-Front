@@ -60,7 +60,6 @@
     margin-top: 10px;
     width: min-content;
   }
-
   .nav-link {
     padding: 10px 20px;
     margin-top: 5px;
@@ -79,7 +78,7 @@
 }
 
 .coverContainer {
-  background-image:    url("../assets/images/bg-main.jpg") ;
+  background-image: url("../assets/images/bg-main.jpg");
   background-size: cover;
   min-height: 100vh;
   min-width: 100vw;
@@ -109,10 +108,12 @@
   font-weight: 700;
   font-size: 30px;
 }
+
 .coverHeadingTitlePrimary span {
   font-size: 35px;
 
 }
+
 .coverSubHeadingTitle {
   text-transform: uppercase;
   font-weight: 100;
@@ -133,6 +134,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .scrollButton {
   margin-bottom: 1rem;
   background: url('../assets/images/scrollIcon.png');
@@ -143,48 +145,44 @@
 
 
 /* ######## About Style #########*/
-.aboutWrapper{
+.aboutWrapper {
   background: white;
   border-radius: 6px;
-  box-shadow: 0 0 18px 0 rgba(0,0,0,.32);
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, .32);
 }
 
-.aboutWrapper{
+.aboutWrapper {
   color: #232323;
 }
-.aboutTitle{
+.aboutTitle {
   font-size: 14px;
 }
-.socialIcon{
-  mask-image: url(../assets/images/fb.png);
-  mask-repeat: no-repeat;
-  mask-size: 20px;
-  width: 20px;
-  height: 22px;
-  background-color: white;
-  margin-right: 18px;
-  margin-top: 16px;
-  margin-left: 12px;
-
+.socialButtonWrapper i{
+  font-size: 22px;
+  position: relative;
+  top: 2px;
 }
-.socialButtonWrapper{
+
+.socialButtonWrapper {
   line-height: 50px;
   background: rgb(67, 67, 67);
   color: white;
   border-radius: 4px;
   font-weight: 200 !important;
   cursor: pointer;
-  display: flex;
   transition: 0.8s all;
   position: relative;
-  width: fit-content;
+  text-align: center;
   top: 8px;
 }
+
 .socialButtonWrapper:hover {
   background: #4267B2;
 }
-.aboutTitleWrapper{
+
+.aboutTitleWrapper {
   display: flex;
+  width: fit-content;
 }
 
 .aboutValue {
@@ -192,32 +190,44 @@
   font-weight: 200 !important;
   min-width: 60px;
 }
-.aboutTextValue h5{
-  position: absolute;  
-  bottom: 0;
+
+.aboutTextValue h5 {
+  line-height: 60px;
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+.aboutTitleWrapper{
+  margin-left: 2%;
+}
+
 }
 
 /* ######## TEAM ######### */
-.tmContainer{
+.tmContainer {
   margin-top: 6rem;
   margin-bottom: 3rem;
 
 }
-.teamWrapper{
+
+.teamWrapper {
   display: block;
   height: 400px;
 }
-.teamSubTitle{
+
+.teamSubTitle {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-size: 14px;
   margin-bottom: 2rem;
 }
-.headingSpacer{
+
+.headingSpacer {
   border: 1px solid rgb(231, 20, 38);
   border-radius: 2px;
   width: 25%;
 }
+
 /* ######## Service ######### */
 
 .serviceCard {
@@ -228,14 +238,50 @@
   background: white;
   transition: 0.5s all;
 
-} 
-.serviceCard:hover{
+}
+
+.serviceCard:hover {
   box-shadow: 0 0 8px 0 rgba(33, 33, 33, 0.441);
 
 }
-.serviceContainer{
+
+.serviceContainer {
   background: #f2f2f2;
   padding-top: 3rem;
   padding-bottom: 3rem;
 
+}
+
+/*###### SERVICES ####*/
+
+.serviceBG {
+  background-color: #969696;
+  position: absolute;
+  width: 50px;
+  z-index: 0;
+  height: 50px;
+  top: -6px;
+  left: 8px;
+  border-radius: 5px;
+}
+
+.serviceIcon {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  background: #e71426;
+  margin: 0 auto;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+.serviceIcon i{
+  font-size: 26px;
+  position: relative;
+  bottom: 2px;
+}
+.serviceTitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
