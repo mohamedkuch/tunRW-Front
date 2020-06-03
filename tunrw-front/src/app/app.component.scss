@@ -24,6 +24,7 @@
   margin-left: 1rem;
   text-align: center;
   font-size: 12px;
+
 }
 
 .nav-link {
@@ -31,6 +32,7 @@
   color: #eaeaea !important;
   border-radius: 2px;
   transition: 0.8s all;
+
 }
 
 .active>.nav-link {
@@ -60,6 +62,7 @@
     margin-top: 10px;
     width: min-content;
   }
+
   .nav-link {
     padding: 10px 20px;
     margin-top: 5px;
@@ -69,12 +72,30 @@
 }
 
 /*#########  Cover Style ########*/
-.coverFilter {
+.coverFilter  {
   position: absolute;
   min-height: 100vh;
   min-width: 100vw;
   background-image: linear-gradient(rgb(26, 26, 26), rgba(231, 20, 38, 0.479));
 
+}
+.coverFilter2{
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(#07020bcd, #c3143171);
+
+}
+
+.coverAbstract {
+
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("../assets/images/BG_Cover.jpg");
+  background-size: auto 180vh;
+  mix-blend-mode: color;
+  background-repeat: no-repeat;
 }
 
 .coverContainer {
@@ -154,10 +175,12 @@
 .aboutWrapper {
   color: #232323;
 }
+
 .aboutTitle {
   font-size: 14px;
 }
-.socialButtonWrapper i{
+
+.socialButtonWrapper i {
   font-size: 22px;
   position: relative;
   top: 2px;
@@ -197,9 +220,9 @@
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
-.aboutTitleWrapper{
-  margin-left: 2%;
-}
+  .aboutTitleWrapper {
+    margin-left: 2%;
+  }
 
 }
 
@@ -276,12 +299,21 @@
   text-align: center;
   line-height: 50px;
 }
-.serviceIcon i{
+
+.serviceIcon i {
   font-size: 26px;
   position: relative;
   bottom: 2px;
 }
+
 .serviceTitle {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.serviceCardWrapper {
+  transition: transform 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+.serviceCardWrapper:hover {
+  transform: scale(1.025);
 }
