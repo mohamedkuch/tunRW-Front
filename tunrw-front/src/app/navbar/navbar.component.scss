@@ -1,9 +1,9 @@
 /*#########  NAVBAR Style ########*/
 .logoBG {
   mask-image: url('../../assets/images/logo.png');
-  width: 140px;
+  width: 160px;
   height: 40px;
-  mask-size: 140px;
+  mask-size: 160px;
   mask-position: center;
   mask-repeat: no-repeat;
   background-color: #eaeaea;
@@ -11,7 +11,7 @@
 
 .navbar {
   background-color: transparent !important;
-  padding: 1rem !important;
+  padding: 2rem !important;
 
 }
 
@@ -22,17 +22,20 @@
 
 .nav-item {
   margin-left: 1rem;
+  margin-right: 1rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-family: 'Niramit', sans-serif !important;
+
 
 }
 
-.nav-link {
+.nav-link , .nav-item{
   text-transform: uppercase;
   color: #eaeaea !important;
   border-radius: 2px;
   transition: 0.8s all;
-
 }
 
 .active>.nav-link {
@@ -43,18 +46,31 @@
   // border-bottom: 1px solid #E71424 !important;
 }
 
-.nav-link:hover {
-  background: rgb(231, 20, 38);
+.navButton:hover {
+  background: rgb(231, 20, 38) !important;
   -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   // border-bottom: 1px solid #E71424 !important;
 }
 
+
 .menuIcon {
   color: #eaeaea !important;
 }
 
+
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    background: rgba(38, 38, 38, 0.863);
+    position: relative;
+    width: min-content;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+}
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
@@ -66,7 +82,6 @@
   .nav-link {
     padding: 10px 20px;
     margin-top: 5px;
-
   }
 
 }
@@ -109,11 +124,12 @@
 
 
 /* ########### Cover Heading style ######## */
-.navbarContainer{
-  position: absolute;
+.navbarContainer {
+  position: fixed;
   left: 50%;
   transform: translate(-50%, 0%);
 }
+
 .coverHeadingContainer {
   color: white;
   text-align: center;
