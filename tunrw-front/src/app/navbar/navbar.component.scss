@@ -109,7 +109,11 @@
 
 
 /* ########### Cover Heading style ######## */
-
+.navbarContainer{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
 .coverHeadingContainer {
   color: white;
   text-align: center;

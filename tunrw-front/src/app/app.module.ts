@@ -8,11 +8,17 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
+import { TeamComponent } from './team/team.component';
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    ServiceComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
