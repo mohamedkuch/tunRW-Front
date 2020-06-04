@@ -21,14 +21,15 @@
 }
 
 .nav-item {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-align: center;
   font-size: 13px;
   letter-spacing: 2px;
   font-family: 'Niramit', sans-serif !important;
-
-
+}
+.nav-link {
+  padding: 10px;
 }
 
 .nav-link , .nav-item{
@@ -46,7 +47,7 @@
   // border-bottom: 1px solid #E71424 !important;
 }
 
-.navButton:hover {
+.nav-link:hover {
   background: rgb(231, 20, 38) !important;
   -webkit-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: -10px 10px 34px 0px rgba(0, 0, 0, 0.28);
@@ -126,11 +127,14 @@
 /* ########### Cover Heading style ######## */
 .navbarContainer {
   position: fixed;
+  z-index: 2;
   left: 50%;
   transform: translate(-50%, 0%);
 }
 
 .coverHeadingContainer {
+  position: relative;
+  z-index: 1;
   color: white;
   text-align: center;
   height: calc(100vh - 200px);
