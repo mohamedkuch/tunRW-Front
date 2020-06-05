@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,9 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
+  @HostListener('window:scroll', ['$event']) 
+  doSomething(event) {
+  }
   ngOnInit(): void {
   }
 
