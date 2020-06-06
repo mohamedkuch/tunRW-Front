@@ -9,38 +9,53 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
     trigger('navbarAnimation', [
       state('open', style({ opacity: 1, height: '88px' })),
       state('closed', style({ opacity: 0, height: '0px' })),
-      transition('open <=> closed', [animate('500ms ease-in-out')] )
+      transition('open <=> closed', [animate('500ms ease-in-out')])
     ]),
 
     trigger('navbarColorAnimation', [
       state('open', style({ color: '#232323' })),
-      state('closed', style({  color: 'white' })),
-      transition('open <=> closed', [animate('500ms ease-in-out')] )
+      state('closed', style({ color: 'white' })),
+      transition('open <=> closed', [animate('500ms ease-in-out')])
     ]),
 
     trigger('navbarLogoColorAnimation', [
-      state('open', style({ background : '#232323' })),
-      state('closed', style({  background: 'white' })),
-      transition('open <=> closed', [animate('500ms ease-in-out')] )
+      state('open', style({ background: '#232323' })),
+      state('closed', style({ background: 'white' })),
+      transition('open <=> closed', [animate('500ms ease-in-out')])
     ]),
 
-    
+
   ]
 })
 export class NavbarComponent implements OnInit {
-  @ViewChild('navList' , {static: false}) navList: ElementRef; 
+  @ViewChild('navList', { static: false }) navList: ElementRef;
+  @ViewChild('abstractBG', { static: false }) abstractBG: ElementRef;
+  @ViewChild('coverBG', { static: false }) coverBG: ElementRef;
+
+
   navbarTrigger = false;
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
-    // console.debug("Scroll Event", document.body.scrollTop);
-    // see András Szepesházi's comment below
-    console.log("Scroll Event", window.pageYOffset);
-    if (window.pageYOffset > 50){
+    // parallax
+
+    var limit = this.abstractBG.nativeElement.offsetHeight - 10;
+
+    if (window.pageYOffset < limit) {
+      var percent =  window.pageYOffset / this.abstractBG.nativeElement.offsetHeight * 100 ;
+      this.abstractBG.nativeElement.style.backgroundPositionY = (percent / 3).toString() + '%';
+      this.coverBG.nativeElement.style.backgroundPositionY = (percent / 8).toString() + 'vh';
+    }
+
+
+
+
+
+    if (window.pageYOffset > 50) {
       this.navbarTrigger = true;
       this.navList.nativeElement.classList.remove('navbar-dark');
       this.navList.nativeElement.classList.add('navbar-light');
     }
-    else{
+    else {
       this.navbarTrigger = false;
       this.navList.nativeElement.classList.remove('navbar-light');
       this.navList.nativeElement.classList.add('navbar-dark');

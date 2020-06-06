@@ -1,10 +1,10 @@
 <!-- Cover -->
 
-<div class="container coverContainer"></div>
+<div class="container coverContainer" #coverBG></div>
 
-<div class="coverFilter"></div>
+<div class="coverFilter" ></div>
 
-<div class="coverAbstract"></div>
+<div class="coverAbstract"  #abstractBG></div>
 
 <div class="coverFilter2"></div>
 
@@ -26,7 +26,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav bgWhite ml-auto" >
+          <ul class="navbar-nav  ml-auto" [ngClass]="{'bgWhite': navbarTrigger, 'bgMed': !navbarTrigger }" >
             <li class="nav-item mt-2 mt-lg-0 active">
               <a class="nav-link" href="#">Home </a>
             </li>

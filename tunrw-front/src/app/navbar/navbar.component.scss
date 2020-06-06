@@ -87,11 +87,24 @@
     margin-top: 5px;
   }
 
-  .bgWhite  {
+  .bgWhite {
     background: rgba(255, 255, 255, 0.989) !important;
     -webkit-box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
     -moz-box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
     box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
+  }
+  .bgMed{
+
+    background: #262626 !important;
+    -webkit-box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: -10px 10px 24px 0px rgba(0, 0, 0, 0.28);
+  }
+
+
+  .coverHeadingContainer {
+    height: calc(100vh) !important;
+    margin-bottom: 5rem;
   }
 
 }
@@ -127,6 +140,7 @@
 .coverContainer {
   background-image: url("../../assets/images/bg-main.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
   min-width: 100vw;
   position: absolute;
