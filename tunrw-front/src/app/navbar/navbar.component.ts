@@ -42,13 +42,9 @@ export class NavbarComponent implements OnInit {
 
     if (window.pageYOffset < limit) {
       var percent =  window.pageYOffset / this.abstractBG.nativeElement.offsetHeight * 100 ;
-      this.abstractBG.nativeElement.style.backgroundPositionY = (percent / 3).toString() + '%';
+      this.abstractBG.nativeElement.style.backgroundPositionY = (percent / 1.5).toString() + '%';
       this.coverBG.nativeElement.style.backgroundPositionY = (percent / 8).toString() + 'vh';
     }
-
-
-
-
 
     if (window.pageYOffset > 50) {
       this.navbarTrigger = true;
