@@ -127,7 +127,7 @@
 }
 
 .coverAbstract {
-
+  transition: 0.5s all;
   position: absolute;
   min-height: 100vh;
   min-width: 100%;
@@ -138,6 +138,7 @@
 }
 
 .coverContainer {
+  transition: 0.5s all;
   background-image: url("../../assets/images/bg-main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
