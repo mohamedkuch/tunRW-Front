@@ -3,7 +3,9 @@
   class="carousel"
   (swipeleft)="onSwipeLeft($event)"
   (swiperight)="onSwipeRight($event)"
-  (swipe)="onSwipe($event)"
+  (swipeup)="onSwipeUp($event)"
+  (swipedown)="onSwipeDown($event)"
+
 >
   <ng-container *ngFor="let slide of slides; let i = index">
     <div class="slide" @carouselAnimationFirst *ngIf="i === currentSlide">
@@ -12,7 +14,8 @@
         *ngIf="i === currentSlide"
         (swipeleft)="onSwipeLeft($event)"
         (swiperight)="onSwipeRight($event)"
-        (swipe)="onSwipe($event)"
+        (swipeup)="onSwipeUp($event)"
+        (swipedown)="onSwipeDown($event)"
       />
       <div class="slideTitle">
         <h5 class="medTitle">{{ slide.name }}</h5>
@@ -26,7 +29,8 @@
         [src]="slide.src"
         (swipeleft)="onSwipeLeft($event)"
         (swiperight)="onSwipeRight($event)"
-        (swipe)="onSwipe($event)"
+        (swipeup)="onSwipeUp($event)"
+        (swipedown)="onSwipeDown($event)"
       />
       <div class="slideTitle">
         <h5 class="medTitle">{{ slide.name }}</h5>
@@ -40,7 +44,8 @@
         [src]="slide.src"
         (swipeleft)="onSwipeLeft($event)"
         (swiperight)="onSwipeRight($event)"
-        (swipe)="onSwipe($event)"
+        (swipeup)="onSwipeUp($event)"
+        (swipedown)="onSwipeDown($event)"
       />
       <div class="slideTitle">
         <h5 class="medTitle">{{ slide.name }}</h5>

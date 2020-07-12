@@ -95,7 +95,23 @@ export class CarouselComponent implements OnInit {
     this.onPreviousClick();
 
   }
-  onSwipe(event){
-    console.log("####", event)
+  onSwipeUp(event){
+    if(event.pointerType == "touch"){
+      window.scrollTo({
+        top: window.pageYOffset  + (event.distance * 4) +  event.velocityY,
+        behavior: 'smooth',
+      });
+    }
+
+  }
+  onSwipeDown(event){
+    console.log("####", event, "###" , )
+    if(event.pointerType == "touch"){
+      window.scrollTo({
+        top: window.pageYOffset  - (event.distance*4 * event.velocityY),
+        behavior: 'smooth',
+      });
+    }
+
   }
 }

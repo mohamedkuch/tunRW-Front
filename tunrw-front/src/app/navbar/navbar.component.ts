@@ -37,7 +37,6 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   doSomething(event) {
     // parallax
-
     var limit = this.abstractBG.nativeElement.offsetHeight - 10;
 
     if (window.pageYOffset < limit) {

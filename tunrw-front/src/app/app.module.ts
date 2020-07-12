@@ -11,6 +11,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { TeamComponent } from './team/team.component';
+import * as Hammer from 'hammerjs';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { EventsComponent } from './events/events.component';
+
+export class HammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    'swipe': { direction: Hammer.DIRECTION_ALL }
+  };
+}
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +29,8 @@ import { TeamComponent } from './team/team.component';
     NavbarComponent,
     AboutComponent,
     ServiceComponent,
-    TeamComponent
+    TeamComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +39,12 @@ import { TeamComponent } from './team/team.component';
     MatGridListModule,
     MatIconModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: HammerConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
