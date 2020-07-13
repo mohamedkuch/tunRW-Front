@@ -24,6 +24,7 @@
 .eventImg {
   height: 300px;
   min-width: 100%;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 .topWrapper {
@@ -198,5 +199,11 @@
   }
   .thdSlide {
     display: none;
+  }
+  .control.prev{
+    padding-left: 0.27em;
+  }
+  .control.next{
+    padding-right: 0.27em;
   }
 }

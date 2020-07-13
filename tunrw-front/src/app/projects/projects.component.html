@@ -1,0 +1,26 @@
+<div class="projectContainer">
+  <div class="container projectContainer">
+    <div class="row">
+      <div class="col-12">
+        <div class="teamHeading">
+          <h5 class="bigTitle text-center ftBold">
+            Our projects
+          </h5>
+          <div class="headingSpacer mx-auto mt-4"></div>
+          <p class="descr text-center teamSubTitle mt-4">
+            Make an impact
+          </p>
+        </div>
+        <div class="projectWrapper">
+          <div class="row">
+            <div *ngFor="let singleProject of projects" class="col-lg-4 p-0 col-sm-6">
+              <app-single-project [slide]="singleProject"></app-single-project>
+            </div>
+          
+          </div>
+          <!-- /.row -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
