@@ -14,6 +14,7 @@ import { TeamComponent } from './team/team.component';
 import * as Hammer from 'hammerjs';
 import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { EventsComponent } from './events/events.component';
+import { EventCarouselComponent } from './events/event-carousel/event-carousel.component';
 
 export class HammerConfig extends HammerGestureConfig {
   overrides = <any>{
@@ -31,6 +32,7 @@ export class HammerConfig extends HammerGestureConfig {
     ServiceComponent,
     TeamComponent,
     EventsComponent,
+    EventCarouselComponent
   ],
   imports: [
     BrowserModule,

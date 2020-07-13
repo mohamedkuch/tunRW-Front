@@ -13,7 +13,8 @@
         </div>
         <div class="eventWrapper">
           <div class="row">
-            <div class="col-md-12">
+            <!-- Upcoming Event -->
+            <div class="col-md-12 UpcomingEvent">
               <div class="eventCardUpcoming">
                 <div class="row eventCardWrapper">
                   <div class="col-lg-7 topWrapper-up">
@@ -58,106 +59,190 @@
                   </div>
                 </div>
               </div>
-              <hr class="my-5 topSeperator" />
+              <hr class="my-5" />
+
+              <hr class="topSeperator" />
             </div>
+            <!-- END Upcoming Event -->
 
-            <div class="col-md-6">
-              <div class="eventCard">
-                <div class="row eventCardWrapper">
-                  <div class="col-12 topWrapper">
-                    <div class="eventsDateWrapper">
-                      <div class="eventIcon">
-                        <p class="topDate">
-                          Jan
-                        </p>
-                        <p class="bottomDate">
-                          14
-                        </p>
-                      </div>
-                    </div>
-                    <img
-                      class="img-fluid rounded d-block eventImg"
-                      src="https://images.pexels.com/photos/1758531/pexels-photo-1758531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    />
+            <!-- Rest Event -->
+
+            <div class="col-md-12">
+              <ul
+                class="nav nav-pills navWrapper"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-toggle="pill"
+                    href="#pills-home"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                    >Jan</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-toggle="pill"
+                    href="#pills-profile"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                    >Feb</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Mar</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Apr</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Jun</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Jul</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Aug</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Sep</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Oct</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Nov</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link disabled"
+                    id="pills-contact-tab"
+                    data-toggle="pill"
+                    href="#pills-contact"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    >Dec</a
+                  >
+                  <div class="seperator-small"></div>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                >
+                  <div class="carouselWrapper">
+                    <event-carousel [slides]="slides"></event-carousel>
                   </div>
-
-                  <div class="col-12">
-                    <h5 class="eventTitle">
-                      DESIGN THINKING WORKSHOP
-                    </h5>
-                    <hr />
-                    <p class="descr eventDesc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut. The Innovation team
-                      has the pleasure to announce the first 2020 TunRw event
-                      'The Design thinking Workshop by TunRw.It's the 21st
-                      century and every modern company, firm or association is
-                      trying to implement Agile and Design thinking in order to
-                      improve their efficiency.
-                    </p>
-                    <hr />
-                    <p class="eventAddress">
-                      <i
-                        _ngcontent-kuo-c6=""
-                        class="fas fa-map-marker-alt mr-2"
-                      ></i>
-                      Pontstr. 41, 52062 Aachen
-                    </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                >
+                  <div class="carouselWrapper">
+                    <event-carousel [slides]="slides"></event-carousel>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="eventCard">
-                <div class="row eventCardWrapper">
-                  <div class="col-12 topWrapper">
-                    <div class="eventsDateWrapper">
-                      <div class="eventIcon">
-                        <p class="topDate">
-                          May
-                        </p>
-                        <p class="bottomDate">
-                          4
-                        </p>
-                      </div>
-                    </div>
-                    <img
-                      class="img-fluid rounded d-block eventImg"
-                      src="https://images.pexels.com/photos/1130847/pexels-photo-1130847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                    />
-                  </div>
 
-                  <div class="col-12">
-                    <h5 class="eventTitle">
-                      DESIGN THINKING WORKSHOP DESIGN THINKING WORKSHOP
-                    </h5>
-                    <hr />
-                    <p class="descr eventDesc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut. The Innovation team
-                      has the pleasure to announce the first 2020 TunRw event
-                      'The Design thinking Workshop by TunRw.It's the 21st
-                      century and every modern company, firm or association is
-                      trying to implement Agile and Design thinking in order to
-                      improve their efficiency. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut. Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit, sed do eiusmod tempor incididunt ut.
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut.
-                    </p>
-                    <hr />
-                    <p class="eventAddress">
-                      <i
-                        _ngcontent-kuo-c6=""
-                        class="fas fa-map-marker-alt mr-2"
-                      ></i>
-                      Pontstr. 41, 52062 Aachen
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- END Rest Event -->
           </div>
         </div>
       </div>
