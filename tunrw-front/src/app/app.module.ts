@@ -17,6 +17,8 @@ import { EventsComponent } from './events/events.component';
 import { EventCarouselComponent } from './events/event-carousel/event-carousel.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SingleProjectComponent } from './projects/single-project/single-project.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ContactComponent } from './contact/contact.component';
 
 export class HammerConfig extends HammerGestureConfig {
   overrides = <any>{
@@ -36,7 +38,9 @@ export class HammerConfig extends HammerGestureConfig {
     EventsComponent,
     EventCarouselComponent,
     ProjectsComponent,
-    SingleProjectComponent
+    SingleProjectComponent,
+    SponsorsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

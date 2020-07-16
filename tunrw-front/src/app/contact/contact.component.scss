@@ -1,0 +1,118 @@
+.contactContainer {
+  background: #f2f2f2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.headingSpacer {
+  border: 1px solid rgb(231, 20, 38);
+  border-radius: 2px;
+  width: 40%;
+}
+.contactTitle{
+    font-family: "Niramit", sans-serif !important;
+}
+
+.teamSubTitle {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.joinUsText {
+  font-family: "Niramit", sans-serif !important;
+}
+.joinUsText h2 {
+  font-weight: 400;
+}
+.joinBG {
+  background-image: url(../../assets/images/undraw_creative_team_r90h.svg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  background-size: contain;
+  background-position: right;
+}
+
+.joinButton,
+.submitButton {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #e71425;
+  transition: 0.8s all;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 200px;
+  font-weight: 400;
+}
+.list-group,
+.contactShell {
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgba(33, 33, 33, 0.178);
+}
+.list-group-flush {
+  border-radius: 10px;
+  font-family: "Niramit", sans-serif !important;
+}
+.contactShell {
+  border-radius: 10px;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.iconList {
+  width: 30%;
+  text-align: center;
+}
+.list-group-wrapper {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  line-height: 30px;
+  font-family: "Niramit", sans-serif !important;
+  padding-left: 0;
+}
+.textList {
+  width: 70%;
+  margin-left: 6px;
+  text-align: left;
+  word-break: break-all;
+}
+.iconList i {
+  line-height: 40px;
+  font-size: 30px;
+  color: #e71425;
+}
+.textListPrimary {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.textListSecondary {
+  font-weight: lighter;
+  font-size: 14px;
+}
+.iconWrapper {
+  line-height: 70px;
+}
+@media (max-width: 992px) {
+  .joinBG {
+    background-image: none;
+    min-height: 0px;
+  }
+  .joinUsText h2 {
+    text-align: center;
+  }
+  .iconList {
+    width: 25%;
+  }
+  .textList {
+    width: 75%;
+  }
+}
