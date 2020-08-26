@@ -1,6 +1,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -38,6 +38,30 @@ body {
 
   background-color: rgb(300, 300, 300);
 }
+
+.swiper-scrollbar-drag {
+  background-color: #e71426 !important;
+  border-left: 10px solid #fff !important;
+  border-right: 10px solid #fff !important;
+  height: 20px !important;
+  border-radius: 0px;
+  position: relative;
+  left: 0;
+  top: -8px;
+}
+.swiper-scrollbar {
+  position: relative;
+  z-index: 50;
+  height: 4px !important;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  right: auto;
+  left: -10px;
+  background-color: #cfd6e3;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 /* ###### General style ###########*/
 .title,
 .smallTitle,
@@ -46,7 +70,7 @@ body {
 .serviceTitle,
 .descr,
 .aboutTitleWrapper {
-  font-family: 'Niramit', sans-serif !important;
+  font-family: "Niramit", sans-serif !important;
 }
 
 button {
@@ -56,7 +80,6 @@ button {
 
 .smallTitle {
   font-size: 16px !important;
-
 }
 
 .medTitle {
@@ -82,5 +105,5 @@ button {
   text-align: justify;
 }
 .spacer {
-  margin:4rem 0;
+  margin: 4rem 0;
 }

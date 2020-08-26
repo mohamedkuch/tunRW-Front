@@ -1,118 +1,54 @@
-<!-- carousel -->
-<div
-  class="carousel"
-  (swipeleft)="onSwipeLeft($event)"
-  (swiperight)="onSwipeRight($event)"
-  (swipeup)="onSwipeUp($event)"
-  (swipedown)="onSwipeDown($event)"
->
-  <!-- controls -->
-  <button class="control prev" (click)="onPreviousClick()">
-    <span class="arrow left"></span>
-  </button>
-  <button class="control next" (click)="onNextClick()">
-    <span class="arrow right"></span>
-  </button>
 
-  
-<div class="carouselWrapperInside">
-  <ng-container *ngFor="let slide of slides; let i = index">
-    <div class="slide" @carouselAnimationFirst *ngIf="i === currentSlide">
-      <div class="eventCard firstSlideCard">
-        <div class="row eventCardWrapper">
-          <div class="col-12 topWrapper">
-            <div class="eventsDateWrapper">
-              <div class="eventIcon">
-                <p class="topDate">
-                  Jan
-                </p>
-                <p class="bottomDate">
-                  14
-                </p>
+
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide p-2"  *ngFor="let slide of slides; let i = index">
+              <div class="eventCard firstSlideCard">
+                <div class="row eventCardWrapper">
+                  <div class="col-12 topWrapper">
+                    <div class="eventsDateWrapper">
+                      <div class="eventIcon">
+                        <p class="topDate">
+                          Jan
+                        </p>
+                        <p class="bottomDate">
+                          14
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="img-fluid rounded d-block eventImg"
+                      [src]="slide.src"
+                    />
+                  </div>
+        
+                  <div class="col-12">
+                    <h5 class="eventTitle">
+                      {{ slide.name }}
+                    </h5>
+                    <hr />
+                    <p class="descr eventDesc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut. The Innovation team has the pleasure
+                      to announce the first 2020 TunRw event 'The Design thinking
+                      Workshop by TunRw.It's the 21st century and every modern company,
+                      firm or association is trying to implement Agile and Design
+                      thinking in order to improve their efficiency.
+                    </p>
+                    <hr />
+                    <p class="eventAddress">
+                      <i _ngcontent-kuo-c6="" class="fas fa-map-marker-alt mr-2"></i>
+                      Pontstr. 41, 52062 Aachen
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <img
-              class="img-fluid rounded d-block eventImg"
-              [src]="slide.src"
-              *ngIf="i === currentSlide"
-              (swipeleft)="onSwipeLeft($event)"
-              (swiperight)="onSwipeRight($event)"
-              (swipeup)="onSwipeUp($event)"
-              (swipedown)="onSwipeDown($event)"
-            />
-          </div>
-
-          <div class="col-12">
-            <h5 class="eventTitle">
-              {{ slide.name }}
-            </h5>
-            <hr />
-            <p class="descr eventDesc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut. The Innovation team has the pleasure
-              to announce the first 2020 TunRw event 'The Design thinking
-              Workshop by TunRw.It's the 21st century and every modern company,
-              firm or association is trying to implement Agile and Design
-              thinking in order to improve their efficiency.
-            </p>
-            <hr />
-            <p class="eventAddress">
-              <i _ngcontent-kuo-c6="" class="fas fa-map-marker-alt mr-2"></i>
-              Pontstr. 41, 52062 Aachen
-            </p>
-          </div>
+         
         </div>
-      </div>
-    </div>
-    <div *ngIf="i === sndSlide" @carouselAnimationSnd class="slide sdSlide">
-      <div class="eventCard sndSlideCard">
-        <div class="row eventCardWrapper">
-          <div class="col-12 topWrapper">
-            <div class="eventsDateWrapper">
-              <div class="eventIcon">
-                <p class="topDate">
-                  Jan
-                </p>
-                <p class="bottomDate">
-                  14
-                </p>
-              </div>
-            </div>
-            <img
-              class="img-fluid rounded d-block eventImg"
-              [src]="slide.src"
-              (swipeleft)="onSwipeLeft($event)"
-              (swiperight)="onSwipeRight($event)"
-              (swipeup)="onSwipeUp($event)"
-              (swipedown)="onSwipeDown($event)"
-            />
-          </div>
-
-          <div class="col-12">
-            <h5 class="eventTitle">
-              {{ slide.name }}
-            </h5>
-            <hr />
-            <p class="descr eventDesc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut. The Innovation team has the pleasure
-              to announce the first 2020 TunRw event 'The Design thinking
-              Workshop by TunRw.It's the 21st century and every modern company,
-              firm or association is trying to implement Agile and Design
-              thinking in order to improve their efficiency.
-            </p>
-            <hr />
-            <p class="eventAddress">
-              <i _ngcontent-kuo-c6="" class="fas fa-map-marker-alt mr-2"></i>
-              Pontstr. 41, 52062 Aachen
-            </p>
-          </div>
-        </div>
+        <!-- Add Scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
 
-    </div>
-  </ng-container>
-</div>
-
-
-</div>
