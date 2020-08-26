@@ -34,6 +34,14 @@
   position: relative;
   bottom: 2px;
 }
+.eventTitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .topDate {
   border-bottom: 1px solid white;
 }
@@ -110,4 +118,11 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+.swiper-scrollbar {
+  opacity: 0.6; 
+  transition: 1s opacity;
+}
+.swiper-scrollbar:hover, .swiper-scrollbar:active {
+  opacity: 1; 
 }

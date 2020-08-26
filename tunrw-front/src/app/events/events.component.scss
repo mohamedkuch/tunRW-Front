@@ -176,6 +176,23 @@
     height: 180px;
   }
 }
+@media (max-width: 576px) {
+  .swiper-button-next{
+    right: 10px;
+  }
+  .swiper-button-prev{
+    left: 10px;
+  }
+}
+@media (min-width: 576px) {
+  .swiper-button-next{
+    right: -20px;
+  }
+  .swiper-button-prev{
+    left: -20px;
+  }
+}
+
 
 .carouselWrapper {
   display: block;

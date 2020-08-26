@@ -53,8 +53,9 @@
 // Next and Prev buttons
 // =========================
 .control {
+  background-color: #00000042;
+  border-radius: 5px;
   border: none;
-  background-color: transparent;
   outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
   position: absolute;
   cursor: pointer;
