@@ -114,7 +114,7 @@
   position: absolute;
   min-height: 100vh;
   min-width: 100%;
-  background-image: linear-gradient(rgb(26, 26, 26), rgba(231, 20, 38, 0.479));
+  background-image: linear-gradient(rgb(26, 26, 26), rgba(231, 20, 38, 0.158));
 
 }
 
@@ -122,7 +122,7 @@
   position: absolute;
   min-height: 100vh;
   min-width: 100%;
-  background-image: linear-gradient(#07020bcd, #c3143171);
+  background-image: linear-gradient(#07020bcd, #c3143131);
 
 }
 
@@ -133,6 +133,7 @@
   min-width: 100%;
   background-image: url("../../assets/images/BG_Cover.jpg");
   background-size: auto 180vh;
+  opacity: 0.7;
   mix-blend-mode: color;
   background-repeat: no-repeat;
 }
