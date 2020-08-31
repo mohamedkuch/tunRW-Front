@@ -26,6 +26,8 @@
 
   <script type="module">
     import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+    var next = document.getElementById("nextCarousel");
+    var prev = document.getElementById("prevCarousel");
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -65,23 +67,25 @@
       }
     });
 
-/*
-    var swiperTeam = new Swiper('.swiper-team', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      breakpoints: {
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        }
-      },
-      navigation: {
-        nextEl: '.swiper-team-next',
-        prevEl: '.swiper-team-prev',
-      },
-    });
-    */
 
+    next.style.transition = "0.2s all";
+    prev.style.transition = "0.2s all";
+
+
+    swiperTeam.on('sliderMove', function () {
+      next.style.opacity = "0";
+      prev.style.opacity = "0";
+    });
+
+    swiperTeam.on('transitionStart', function () {
+      next.style.opacity = "0";
+      prev.style.opacity = "0";
+    });
+
+    swiperTeam.on('transitionEnd', function () {
+      next.style.opacity = "100";
+      prev.style.opacity = "100";
+    });
   </script>
 </head>
 

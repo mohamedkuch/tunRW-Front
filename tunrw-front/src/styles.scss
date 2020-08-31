@@ -65,10 +65,14 @@ body {
   color: #e71426 !important;
   z-index: 1 !important;
 }
+.swiper-pagination-bullet-active{
+  background: #e71426 !important;
+}
 .swiper-button-next:active, .swiper-button-next:focus,
 .swiper-button-prev:active, .swiper-button-prev:focus{
   outline: none !important;
 }
+
 
 /* ###### General style ###########*/
 .title,
