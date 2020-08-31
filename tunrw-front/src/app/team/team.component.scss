@@ -1,26 +1,57 @@
-
 /* ######## TEAM ######### */
 .tmContainer {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-  
-  }
-  
-  .teamWrapper {
-    display: block;
-    height: 400px;
-  }
-  
-  .teamSubTitle {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-size: 14px;
-    margin-bottom: 2rem;
-  }
-  
-  .headingSpacer {
-    border: 1px solid rgb(231, 20, 38);
-    border-radius: 2px;
-    width: 25%;
-  }
-  
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  overflow-x: hidden;
+}
+
+.teamWrapper {
+  display: block;
+  height: 400px;
+}
+
+.teamSubTitle {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.headingSpacer {
+  border: 1px solid rgb(231, 20, 38);
+  border-radius: 2px;
+  width: 25%;
+}
+.swiper-next,
+.swiper-prev {
+  position: absolute;
+  width: calc(var(--swiper-navigation-size) / 20 * 27);
+  z-index: 2;
+  background: #0000005e;
+  height: 350px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+.swiper-next {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  right: 8px;
+  left: auto;
+}
+.swiper-next i, .swiper-prev i{
+  color: white;
+  font-size: 20px;
+}
+.swiper-prev {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  left: 8px;
+  right: auto;
+}
+.swiper-next:active, .swiper-next:focus,
+.swiper-prev:active, .swiper-prev:focus{
+  outline: none !important;
+}

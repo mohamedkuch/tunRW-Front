@@ -13,8 +13,16 @@
         </p>
       </div>
       <div class="teamWrapper spacer">
-
-        <carousel [slides]="slides"></carousel>
+        <div class="swiper-next" >
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="swiper-prev" >
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="carouselWrapper">
+          <carousel [slides]="slides"></carousel>
+        </div>
+  
 
       </div>
 
