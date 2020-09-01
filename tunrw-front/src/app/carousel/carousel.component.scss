@@ -27,6 +27,7 @@
 }
 .swiper-pagination{
   bottom: 20px;
+  z-index: 2 !important;
 }
 .swiper-slide {
   text-align: center;

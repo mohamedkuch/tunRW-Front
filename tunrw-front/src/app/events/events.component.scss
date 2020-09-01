@@ -34,7 +34,7 @@
 
 .eventContainer {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .eventIcon {
@@ -110,6 +110,18 @@
 .eventAddress i {
   color: #e71426;
 }
+.eventAddress{
+  text-align: left;
+  font-family: "Niramit", sans-serif !important;
+
+}
+.eventAddress span {
+  font-size: 13px;
+  font-style: italic;
+  color: #e71426;
+  float: right;
+}
+
 .bottomWrapper {
   box-shadow: 0 0 4px 0 rgba(33, 33, 33, 0.178);
   padding: 26px;
@@ -134,19 +146,8 @@
   }
 }
 @media (max-width: 576px) {
-  .swiper-button-next{
-    right: 10px;
-    background: #00000015;
-    height: 100px;
-    transform: translate(0px, -30px);
-    border-radius: 4px;
-  }
-  .swiper-button-prev{
-    left: 10px;
-    background: #00000015;
-    height: 100px;
-    transform: translate(0px, -30px);
-    border-radius: 4px;
+  .swiper-button-next , .swiper-button-prev{
+  display: none;
   }
 }
 @media (min-width: 576px) {
@@ -161,6 +162,5 @@
 
 .carouselWrapper {
   display: block;
-  height: 720px;
   width: 100%;
 }
