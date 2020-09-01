@@ -65,8 +65,19 @@ body {
   color: #e71426 !important;
   z-index: 1 !important;
 }
+.swiper-pagination-bullet{
+  transition: 0.2s all;
+  padding: 5px 12px;
+  border-radius: 2px;
+  opacity: 0.12;
+
+}
 .swiper-pagination-bullet-active{
   background: #e71426 !important;
+  border-radius: 2px;
+  padding: 5px 18px;
+  opacity: 1;
+
 }
 .swiper-button-next:active, .swiper-button-next:focus,
 .swiper-button-prev:active, .swiper-button-prev:focus{

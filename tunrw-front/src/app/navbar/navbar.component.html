@@ -11,12 +11,12 @@
 
 <!-- Navbar-->
 <div [@navbarAnimation]="navbarTrigger ? 'open' : 'closed'" class="navbarCover">
-            
+
 </div>
 <div class="container navbarContainer">
   <div class="row">
     <div class="col-12 p-0">
-       
+
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" #navList>
         <a [@navbarLogoColorAnimation]="navbarTrigger ? 'open' : 'closed'"  class="navbar-brand logoBG" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -26,23 +26,23 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  ml-auto" [ngClass]="{'bgWhite': navbarTrigger, 'bgMed': !navbarTrigger }" >
-            <li class="nav-item mt-2 mt-lg-0 active">
+          <ul id="navbar-menu" class="navbar-nav  ml-auto" [ngClass]="{'bgWhite': navbarTrigger, 'bgMed': !navbarTrigger }" >
+            <li id="nav-home" class="nav-item mt-2 mt-lg-0 active">
               <a class="nav-link" href="#">Home </a>
             </li>
-            <li class="nav-item">
+            <li id="nav-team" class="nav-item">
               <a class="nav-link" href="#">Team</a>
             </li>
-            <li class="nav-item">
+            <li id="nav-service" class="nav-item">
               <a class="nav-link" href="#">Services</a>
             </li>
-            <li class="nav-item">
+            <li id="nav-event" class="nav-item">
               <a class="nav-link" href="#">Events</a>
             </li>
-            <li class="nav-item">
+            <li id="nav-project" class="nav-item">
               <a class="nav-link" href="#">Projects</a>
             </li>
-            <li class="nav-item mb-2 mb-lg-0">
+            <li id="nav-contact" class="nav-item mb-2 mb-lg-0">
               <a class="nav-link" href="#">Contacts</a>
             </li>
           </ul>
